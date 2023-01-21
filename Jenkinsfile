@@ -1,6 +1,6 @@
 pipeline {
   agent {
-    label "java"
+    label "java-maven-u"
   }
   stages {
     stage('checkout-scm') {
