@@ -7,7 +7,7 @@ pipeline {
       steps{
         git branch: 'main', credentialsId: 'git-hub-pwd', url: 'https://github.com/divyaraniduggappa/javawebapp.git'
       }}
-    stage(maven) {
+    stage('maven') {
       steps{
         sh 'mvn install'
       }
