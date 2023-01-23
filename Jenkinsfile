@@ -16,6 +16,11 @@ pipeline {
          sh 'mvn clean install' 
            }
         }
+    stage('approval for deployment'){
+      steps{
+          input "Kindly approve for application deployment or abort the process here"
+         }
+       }
     stage('deploy on tomcat') {
       steps{   
         sshagent(['ubuntu-Tomcat-privatekey']) { 
