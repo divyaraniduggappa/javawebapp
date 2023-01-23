@@ -26,7 +26,7 @@ pipeline {
   }
   
   post{
-    sucess{
+    success{
       emailext attachLog: true,
                to: "divyarani0911@gmail.com, kavyasrinigowda@gmail.com",
                subject: "Jenkins-Build: ${currentBuild.currentResult}",
