@@ -161,7 +161,7 @@
 	  <plugin>
         <groupId>io.github.sonatype.nexus.plugins</groupId>
         <artifactId>nexus-staging-maven-plugin</artifactId>
-        <version>3.16.478</version>
+        <version>3.16.478.v41ee37380162</version>
         <extensions>true</extensions>
         <configuration>
           <serverId>nexus</serverId>
