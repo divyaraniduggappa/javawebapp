@@ -157,7 +157,17 @@
 	<groupId>org.sonarsource.scanner.maven</groupId>
 	<artifactId>sonar-maven-plugin</artifactId>
 	<version>3.7.0.1746</version>
-</plugin>
+        </plugin>
+	  <plugin>
+        <groupId>io.github.sonatype.nexus.plugins</groupId>
+        <artifactId>nexus-staging-maven-plugin</artifactId>
+        <version>3.16.478</version>
+        <extensions>true</extensions>
+        <configuration>
+          <serverId>nexus</serverId>
+          <nexusUrl>https:172.31.27.121:8081</nexusUrl>
+        </configuration>
+      </plugin> 
   </plugins>
   </build>
 </project>
